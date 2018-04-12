@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			#img_box div img {
+				float: left;
+			}
+			
+			#img_box {
+				transform: translate(0px, 0px);
+				transition: 2s;
+				left: -600px;
+			}
+			
+			#but {
+				border-radius: 15px;
+				height: 50px;
+				width: 400px;
+				bottom: 10px;
+				background: rgba(0, 0, 0, 0.2);
+				left: 100px;
+				z-index: 10;
+			}
+			#but:hover{
+				background: rgba(250, 250, 0, 0.5);
+			}
+			
+			#but p {
+				height: 20px;
+				width: 20px;
+				border-radius: 50%;
+				background: yellow;
+				float: left;
+				margin-top: 15px;
+				margin-left: 50px;
+			}
+			.buts0{
+				background: green!important;;
+			}
+			
+			#manual1 {
+				height: 60px;
+				width: 60px;
+				background: rgba(0, 0, 0, 0.3);
+				font-size: 50px;
+				color: white;
+				text-align: center;
+				line-height: 60px;
+				left: 10px;
+				top: 150px;
+				display: none;
+				cursor: pointer;
+			}
+			
+			#manual2 {
+				height: 60px;
+				width: 60px;
+				background: rgba(0, 0, 0, 0.3);
+				font-size: 50px;
+				color: white;
+				text-align: center;
+				line-height: 60px;
+				right: 10px;
+				top: 150px;
+				display: none;
+				cursor: pointer;
+			}
+			
+			#manual1:hover {
+				background: rgba(0, 0, 0, 0.6);
+			}
+			#manual2:hover {
+				background: rgba(0, 0, 0, 0.6);
+			}
+			.color{
+				background: green!important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="images" style="height: 400px;width: 600px;margin: 0 auto;position: relative;overflow: hidden;border: #0df4ec 3px solid;">
+			<div id="img_box" style="height: 400px;width: 4200px; position: absolute;z-index: 9;">
+				<div class="photo"><img src="img/photo1 (5).jpg" / height="400px" width="600px"></div>
+				<div class="photo"><img src="img/photo1 (1).jpg" / height="400px" width="600px"></div>
+				<div class="photo"><img src="img/photo1 (2).jpg" / height="400px" width="600px"></div>
+				<div class="photo"><img src="img/photo1 (3).jpg" / height="400px" width="600px"></div>
+				<div class="photo"><img src="img/photo1 (4).jpg" / height="400px" width="600px"></div>
+				<div class="photo"><img src="img/photo1 (5).jpg" / height="400px" width="600px"></div>
+				<div class="photo"><img src="img/photo1 (1).jpg" / height="400px" width="600px"></div>
+			</div>
+			<div id="but"style="position: absolute;">
+				<p class="buts0"></p>
+				<p class="buts"></p>
+				<p class="buts"></p>
+				<p class="buts"></p>
+				<p class="buts"></p>
+			</div>
+			<div id="manual1" style="position: absolute;z-index: 10;">
+				<</div>
+					<div id="manual2" style="position: absolute;z-index: 10;">></div>
+			</div>
+
+			<script>
+				function getid(id) {
+					return document.getElementById(id);
+				}
+				var images = document.getElementsByClassName("photo");
+				var but=getid("but");
+				var buts=but.getElementsByTagName("p");
+				var manual1 = getid("manual1");
+				var manual2 = getid("manual2");
+				var box = getid("images");
+				var img_box = getid("img_box")
+				var mbe = 0;
+				var setj = -1
+				var time=true;
+				var changeDOT=1;//解决bug所用
+				var fristDOT=0;//解决bug所用
+				
+			//控制点击的计时器
+              function times(){
+              	var tme=0;
+              	function tmes(){
+              		tme++;
+              		//console.log(tme)
+              		var tmeT=setTimeout(tmes,1000);
+              		if(tme===2){
+              			clearTimeout(tmeT);
+              			time=true;
+              			tme=0;
+              		}
+              	
+              	}
+              	tmes();
+              }
+				//实现手动切换
+				function manual() {
+					if(fristDOT===0){
+					if( changeDOT===0){
+						mbe=0;
+					}
+					//一次移动的次数
+					time=false;
+					mbe++;
+					changecolor(mbe);//改变点的颜色
+					setj=2;
+					if(mbe === 5){
+						fristDOT=1;
+						getT();
+					}
+					img_box.style.transition="2s";
+					img_box.style.transform = 'translate(-'+ mbe * 600 +'px , 0)';
+					times()
+					 changeDOT=1;
+					if(mbe===0){
+						setj=-1;
+					}
+					}
+				}
+				function changecolor(m){
+					time=false;
+					var change=m;
+					if(change===-1){
+					  change=4;
+					}
+					if(change===5){
+						change=0;
+					}
+					for(var k=0;k<buts.length;k++){
+						buts[k].className="";
+					}
+					buts[change].className="color";
+				}
+				
+				
+				//manual1设置时间函数
+                function getT(){
+                	img_box.style.transform = "translate(-" + mbe * 600 + "px , 0)"
+                	var gt=0;
+                	function go(){
+                		gt++;
+                		var getsT=setTimeout(go,1000);
+                		//console.log(gt);
+                		if(gt===3){
+                			mbe=0;
+                			clearTimeout(getsT)
+                			img_box.style.transition="0s";
+                			img_box.style.transform = "translate(0 , 0)";
+                			time=true;
+                			fristDOT=0;
+                		}
+                		
+                	}
+                	go();
+                }
+				function manual_1() {
+					//一次移动的次数
+					if(setj === -1) {
+						changecolor(setj);
+						set();
+					} 
+					
+					else {
+						if(mbe===0){
+							
+						}
+						else{
+						  mbe--;
+						}
+						changecolor(mbe);
+						img_box.style.transition = "2s";
+						times();
+						img_box.style.transform = "translate(-" + mbe * 600 + "px , 0)";
+						if(mbe === 0) {
+							setT();
+						}
+						console.log(mbe);
+					}
+
+				}
+
+				//延时控制秒数
+				function setT() {
+					setj=2;
+					var getT = 0;
+
+					function go() {
+						var setTs = setTimeout(go, 1000);
+						getT++;
+						if(getT === 3) {
+							clearTimeout(setTs)
+							if(setj === 2) {
+								mbe = 1;
+								setj = -1;
+								getT = 0;
+							}
+						}
+						console.log(getT);
+					}
+					go();
+				}
+
+				//延时控制translation的时间
+				function set() {
+					setj = 1;
+					mbe=1;
+					img_box.style.transform = "translate(" + mbe * 600 + "px , 0)"
+					var n = 0;
+
+					function go() {
+						n++;
+						console.log(n);
+						var setT = setTimeout(go, 1000);
+						if(n === 3) {
+							clearTimeout(setT);
+							if(setj === 1) {
+								img_box.style.transition = "0s";
+								img_box.style.transform = "translate(-2400px,0)";
+								if(mbe === 1) mbe = 4;
+								n = 0;
+								time=true;
+							}
+						}
+					}
+					go();
+				}
+
+				window.onload = function() {
+					box.onmousemove = function() {
+						manual1.style.display = "block";
+						manual2.style.display = "block";
+						clearInterval(setautomatic);
+					}
+					box.onmouseleave = function() {
+						manual1.style.display = "none"
+						manual2.style.display = "none"
+						setautomatic=setInterval(automatic,3000);
+					}
+
+					manual1.onclick = function() {
+						if(time){
+							manual()
+						}
+						
+					}
+					manual2.onclick = function() {
+						if(time){
+							manual_1()
+						}
+					}
+
+					//实现自动播放
+					function automatic(){
+						manual1.onclick();
+					}
+                    var setautomatic=setInterval(automatic,3000);
+                     
+                     //实现点击切换图片
+                     for(var l=0;l<buts.length;l++){
+                     	but_click(l)
+                     }
+                     
+                     function but_click(l){
+                
+                     	buts[l].onclick=function(){
+                     		if(time){
+                     		mbe=l+1;
+                     		console.log(l);
+                     		setj=3;
+                     		if(l===0){
+                     		   changeDOT=0;
+                              //buttime();
+                              manual_1();
+                              changecolor(l);
+                     		}
+                     		else{
+                     		changeDOT=1;
+                     		manual_1();
+                     		}
+                     		
+                     	}
+                     	}
+                     }
+				}
+			</script>
+	</body>
+
+</html>

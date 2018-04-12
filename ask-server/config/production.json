@@ -1,0 +1,5 @@
+{
+  "mongodb": "mongodb://localhost/ask_youngon",
+  "appid": "wx69e5e843e03a2014",
+  "appsecret": "64868182e1763423663e928b163777f0"
+}

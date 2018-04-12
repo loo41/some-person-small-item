@@ -1,0 +1,129 @@
+
+body {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%
+}
+#smallPhone{
+  display: none!important;
+}
+#bigContainer{
+  background: rgb(0, 188, 212);
+}
+#bigPhone {
+  margin: 0 auto
+}
+.image-gallery-slide img{
+  height: 300px;
+}
+
+@media only screen and (min-width: 319px) and (max-width: 1024px) {
+  #root{
+    width: 100%!important;
+  }
+  .root{
+    width: 100%!important;
+  }
+  .bigWeb{
+    display: none!important;
+  }
+  .imgStyle{
+    margin: 0 auto;
+  }
+  #bigPhone{
+    display: none!important;
+  }
+  #smallPhone{
+    display: block!important;
+  }
+  #briefImg{
+    height: 25rem!important;
+    width: 100%!important;
+  }
+  #content {
+    display: block!important
+  }
+  #content div{
+    height: 30rem!important;
+    width: 100%!important;
+    margin-top: 1rem;
+    margin: 0rem!important;
+    border-radius: 2rem;
+  }
+  .imgTitle{
+    min-height: 4rem!important;
+    line-height: 4rem!important
+  }
+  .imgTitle:hover{
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3)
+  }
+  .business{
+    height: 10rem!important;
+  }
+  .image-gallery-slides, .imageSamllPhoneStyle{
+    height: 20rem!important;
+  }
+}
+
+.content{
+  height: 4rem;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  line-height: 6rem;
+  display: 'flex';
+  align-items: 'center'
+} 
+
+#content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
+}
+
+#content div{
+  height: 30rem;
+  width: 50rem;
+  margin: 1rem;
+  background: rgb(0, 188, 212)
+}
+
+#content div:hover{
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4)
+}
+
+/**
+*briefing
+*/
+
+@media only screen and (min-width: 319px) and (max-width: 1024px) {
+  .briefingContentStyle{
+    width: 100%!important
+  }
+  .butStyle{
+    width: 100%!important
+  }
+  .noticeDateStyle{
+    display: none!important;
+    text-align: center!important
+  }
+  .processStyle{
+    display: none!important
+  }
+  .load{
+    display: block!important
+  }
+}
+
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 150px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

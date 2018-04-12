@@ -1,0 +1,117 @@
+a {
+  color: black;
+  text-decoration: none; 
+}
+@font-face {
+  font-family: title;
+  src: url('../font/HanYiXuTi-2.ttf')
+}
+
+@font-face {
+  font-family: time;
+  src: url('../font/BenMoJingYuan-2.ttf')
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media only screen and (min-width: 319px) and (max-width: 1024px) {
+  .mainleft {
+    display: none;
+  }
+  .blogStyle {
+    width: 94%!important;
+    min-height: 0!important;
+    padding: 0!important;
+    margin-left: 3%!important;
+    margin-right: 3%!important;
+  }
+  .mainRight{
+    width: 100%!important;
+    margin-left: 0rem!important;
+  }
+  .blogContainer{
+    justify-content: ''!important;
+  }
+  .blogRight{
+    display: none!important;
+  }
+  .labelPageStyle{
+    width: 100%!important;
+  }
+  .leaveMessage{
+    width: 100%!important;
+  }
+  .headUrl{
+    display: none!important;
+  }
+  .cellphone{
+    display: block!important;
+  }
+  .leaveTime{
+    text-align: start!important;
+  }
+  .leaveInput{
+    width: 100%!important
+  }
+}
+
+.changeCardHeight>div{
+ width: 100%!important;
+ height: 100%!important;
+ min-height: 18.4rem!important
+}
+
+.blogStyle {
+  width: 50%;
+  min-height: 50rem;
+  padding: 1rem
+}
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 50px;
+}
+.App-clock {
+  animation: App-logo-spin infinite 20s ease;
+  height: 24px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.headStyle>div {
+  width: 100%;
+  min-height: 0rem;
+  height: 5rem!important;
+  margin-top: 1rem;
+}
+.headStyle div {
+  background: white!important;
+  color: black
+}
+.headStyle>div:hover{
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4)
+}
+.leave:hover{
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4)
+}
+.labelHover:hover{
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4)
+}
+.indexLabelStyle:hover{
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0)!important
+}
+.more:hover{
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4)!important
+}
+.indexLabelStyle span{
+  font-size: 2rem!important;
+  font-family: time
+}
+.headStyle>div{
+  width: 100%!important
+}

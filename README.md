@@ -7,8 +7,6 @@
 
 [答题系统界面](http://ask.tianchenyong.top)
 
-[youngon](http://youngon.cn)
-
 [^--^](https://tianchenyong.top)
 
 [^--^](http://vue-admin.tianchenyong.top)

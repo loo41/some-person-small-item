@@ -1,0 +1,51 @@
+/* 全局 */
+@media only screen and (min-width: 319px) and (max-width: 992px) {
+    .display-app{
+        display: none!important;
+    }
+    .display-pc {
+        display: block!important;
+    }
+    .img-full {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+    }
+    .logo-left {
+        padding: 1rem;
+    }
+}
+
+
+@media only screen and (min-width: 319px) and (max-width: 992px) {
+    .content_box{
+        width: 100%;
+    }
+    .study_box{
+        width: 100%;
+    }
+    .center {
+        padding: 1rem;
+    }
+    .header-top{
+        min-height: 8rem!important;
+        height: 100%!important;
+    }
+    .input-but {
+        padding: 2rem!important;
+    }
+    .center-lf {
+        border-left: 2px #ffffff solid;
+        width: 0%;
+    }
+    .nveStyle {
+        border-bottom: 0.1rem #3fb1ed solid;
+    }
+    .nve div{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .main-con {
+        width: 100%
+    }
+}

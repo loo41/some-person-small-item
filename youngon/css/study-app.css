@@ -1,0 +1,84 @@
+/* 全局 */
+@media only screen and (min-width: 319px) and (max-width: 992px) {
+    .display-app{
+        display: none!important;
+    }
+    .display-pc {
+        display: block!important;
+    }
+    .img-full {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+    }
+    .logo-left {
+        padding: 1rem;
+    }
+}
+
+@media only screen and (min-width: 319px) and (max-width: 992px) {
+    .study_box{
+        width: 100%;
+    }
+    .center {
+        padding: 1rem;
+    }
+    .header-top{
+        min-height: 8rem!important;
+        height: 100%!important;
+    }
+    .input-but {
+        padding: 2rem!important;
+    }
+    .center-lf {
+        border-left: 2px #ffffff solid;
+        width: 0%;
+    }
+    .nve {
+        min-height: 4.5rem!important;
+        height: 100%!important;
+    }
+    .nveStyle {
+        border-bottom: 0.1rem #3fb1ed solid;
+    }
+    .nve div{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .input-group {
+        margin-right: 0rem;
+    }
+    .banner {
+        height: 20rem;
+        min-height: 20rem;
+    }
+    .body-box_frist_bg{
+        height: 20rem;
+        width: 100%;
+    }
+    .body-box_frist_img {
+        height: 20rem;
+    }
+    .list {
+        padding: 3rem
+    }
+    .body-box {
+        height: auto!important;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1024px) {
+    .study_box{
+        width: 100%;
+    }
+    .list {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .body-box {
+        height: 25rem!important;
+    }
+    .footer {
+        background-size: auto auto;
+    }
+}

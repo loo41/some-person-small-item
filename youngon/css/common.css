@@ -1,0 +1,28 @@
+body {
+    padding: 0rem;
+    margin: 0rem;
+}
+.center-style {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+a { 
+  text-decoration: none!important; 
+  color: #333!important;
+} 
+a:link,a:visited {
+    color: #333!important;
+    text-decoration:none!important;
+}
+a:hover{
+    text-decoration:none!important;
+    color: #333!important;
+}
+@font-face {  
+    font-family: '方正清刻本';  
+    src:url('../font/fonts/fzqkb.ttf') format('truetype');  
+    font-weight: normal;  
+    font-style: normal;  
+}  

@@ -1,0 +1,337 @@
+.corp_box{
+    width: 90%;
+    margin: 0 auto;
+}
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img-full {
+    width: 100%;
+    padding-left: 2rem
+}
+.display-pc{
+    display: none;
+}
+.display-block-app {
+    display: none!important;
+}
+
+/* 头部样式 */
+.header_box {
+    min-height: 26rem;
+}
+.header {
+    min-height: 21rem;
+    background: #37aeeb;
+}
+.header-top{
+    height: 8rem!important;
+}
+.center-lf {
+    border-left: 2px #ffffff solid;
+    width: 100%;
+}
+.btn {
+    background: #38aeeb;
+    color: white;
+}
+.header-bot {
+    height: 13rem;
+}
+.header-bot_font{
+    font-size: 4.4rem;
+    letter-spacing: 0.4rem;
+    color: white;
+    font-family: '方正清刻本'; 
+}
+.header-img_left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header-img_right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.nve {
+    height: 4.5rem;
+    padding-left: 0rem!important;
+    padding-right: 0rem!important;
+    line-height: 4.5rem;
+}
+.nve div{
+    font-size: 2.3rem;
+    cursor: pointer;
+    text-align: center;
+}
+.nveStyle {
+    background: rgba(224, 250, 244, 0.7);
+    border-bottom: 0.4rem #46d0ad solid;
+}
+.banner {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    margin-top: 0.4rem;
+    min-height: 43rem;
+    background-size: 100% 100%;
+    background-image: url(../corp-img/banner.jpg);
+    background-repeat: no-repeat;
+}
+.banner div{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 43rem;
+}
+.banner div img{
+    position: absolute;
+    height: 100%;
+}
+.banner-tit {
+    font-size: 4.4rem;
+    color: white;
+    font-family: '方正清刻本'; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.banner-tit span {
+    display: block;
+    letter-spacing: 3rem;
+}
+
+
+/* 主体样式 */
+.corp_body{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+.body_box {
+    margin-bottom: 4rem;
+    min-height: 37.2rem;
+}
+.body_youngon {
+    background-image: url(../corp-img/list-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.body_youngon span{
+    font-size: 3.4rem;
+    color: white;
+    letter-spacing: 3rem;
+    text-align: center;
+    font-family: '方正清刻本';
+    display: block;
+}
+.body_bg {
+    background: #f2f8f7;
+}
+.body_bg_con{
+    width: 100%;
+    height: 100%;
+    padding-left: 2rem;
+    padding-right: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.body_bg_con span{
+    display: block;
+    font-size: 1.3rem;
+    color: #32373c;
+    line-height: 3rem;
+}
+.body_bg_con span:nth-child(1){
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.body_bg_con span:nth-child(2){
+    text-indent: 3rem;
+}
+.body_bg_con span:nth-child(3){
+    text-align: end;
+}
+.next-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.next-page li:nth-child(1) {
+    background: #6cd7bc
+}
+.next-page li {
+    list-style: none;
+    height: 3.5rem;
+    width: 3.5rem;
+    background: #afeede;
+    text-align: center;
+    line-height: 3.5rem;
+    color: white;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+/* 底部样式 */
+.footer{
+    min-height: 23.0rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url('../img/footer.jpg')
+}
+._footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 17.4rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background: rgba(17, 89, 164, 0.6);
+    width: 100%;
+}
+.weChat{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #eef4f6;
+}
+.iconStyle {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.weChat div:nth-child(1) {
+    margin-right: 1rem
+}
+.weChat div:nth-child(2) p{
+    margin-bottom: 0rem!important;
+    letter-spacing: 0.3rem;
+    white-space: nowrap;  
+    text-overflow:ellipsis; 
+}
+._footer_code {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;  
+    text-overflow:ellipsis; 
+    letter-spacing: 0.3rem;
+    font-size: 1.2rem;
+    color: #eef4f6;
+}
+._footer_code div {
+    border-left: 0.3rem #f9fcfb solid;
+}
+._footer_code div div{
+    text-indent: 2rem
+}
+
+
+
+/* 列表页-文章页 */
+.main_body{
+    min-height: 50rem;
+    margin-top: 2rem;
+}
+.list-bg {
+    min-height: 37rem;
+    width: 100%
+}
+.list-body-top {
+    min-height: 37rem;
+}
+.list-body_bg {
+    height: 37rem;
+    background-image: url(../corp-img/list-bg.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.list-body-top span{
+    text-align: center;
+    letter-spacing: 0.6rem;
+    font-size: 3rem;
+    font-family: '方正清刻本'; 
+    color: white;
+}
+.list-body-con {
+    height: 37rem;
+    margin-top: 10rem;
+}
+.list-body-con span{
+    height: 3.5rem;
+    display: block;
+    width: 12rem;
+    border-radius: 1.5rem;
+    background: #46d0ad;
+    font-size: 1.9rem;
+    font-family: '方正清刻本'; 
+    color: white;
+    text-align: center;
+    line-height: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+
+/* 列表右侧 */
+.list-db-ri {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.list-bd-ri_bg{
+    background-image: url(../corp-img/body-right.png);
+    background-size: 100% 100%;
+    writing-mode: vertical-lr;
+    font-size: 3.2rem;
+    color: white;
+    text-align: center;
+    line-height: 12rem;
+    font-family: '方正清刻本'; 
+    letter-spacing: 2rem;
+    width: 80%;
+    height: 100%;
+    background-repeat: no-repeat; 
+}
+.list-db-ani {
+    position: relative;
+    overflow: hidden;
+}
+.list-animation {
+    position: absolute;
+    transition: transform 1s;
+}
+.list-animation div{
+    margin-bottom: 3rem;
+    height: 27rem;
+    width: 100%
+}
+.list-db-ani div img{
+    height: 100%;
+    width: 100%;
+}

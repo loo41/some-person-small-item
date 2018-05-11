@@ -1,0 +1,89 @@
+@media only screen and (min-width: 319px) and (max-width: 992px) {
+    .display-app{
+        display: none!important;
+    }
+    .list-bd-ri_bg{ 
+        line-height: 250%;
+    }
+}
+
+@media only screen and (min-width: 319px) and (max-width: 992px) {
+    .corp_box{
+        width: 100%;
+    }
+    .display-block-app {
+        display: block!important;
+    }
+    .center {
+        padding: 1rem;
+    }
+    .img-full {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+    }
+    .header-top{
+        min-height: 8rem!important;
+        height: 100%!important;
+    }
+    .input-but {
+        padding: 2rem!important;
+    }
+    .center-lf {
+        border-left: 2px #ffffff solid;
+        width: 0%;
+    }
+    .nve {
+        min-height: 4.5rem!important;
+        height: 100%!important;
+    }
+    .nve div{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .nveStyle {
+        border-bottom: 0.1rem #46d0ad solid;
+    }
+    .banner {
+        min-height: 20rem;
+    }
+    .banner div{
+        min-height: 20rem;
+    }
+    .banner-tit {
+        top: 25%;
+        font-size: 3rem;
+        font-weight: lighter;
+    }
+    .corp_body div{
+        min-height: 25rem;
+    }
+    .next-page {
+        min-height: auto!important;
+    }
+    .list-body_bg {
+        min-height: 20rem;
+        height: 20rem;
+    }
+    .footer {
+        background-size: auto auto;
+    }
+}
+
+
+
+@media only screen and (min-width: 993px) and (max-width: 1024px) {
+    .corp_box{
+        width: 100%;
+    }
+    .body_box { 
+        min-height: auto;
+    }
+    .footer {
+        background-size: auto auto;
+    }
+    .body_bg_con {
+        padding-bottom: 0rem;
+        padding-top: 0rem;
+    }
+}

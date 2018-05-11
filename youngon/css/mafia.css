@@ -1,0 +1,306 @@
+.box {
+  width: 90%;
+  margin: 0 auto;
+}
+.img-full {
+  width: 100%;
+  padding-left: 2rem;
+}
+.display-pc{
+    display: none;
+}
+.display-block-app {
+    display: none!important;
+}
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 头部样式 */
+.header_box {
+    min-height: 26rem;
+}
+.header {
+    min-height: 21rem;
+    background: linear-gradient(top, #d71616, #f0a7a6);
+    background: -o-linear-gradient(top, #d71616, #f0a7a6);
+    background: -webkit-linear-gradient(top, #d71616, #f0a7a6);
+    background: -moz-linear-gradient(top, #d71616, #f0a7a6);
+}
+.header-top{
+    height: 8rem!important;
+}
+.center-lf {
+    width: 100%;
+    display: block;
+}
+.header-bot {
+    height: 13rem;
+}
+.logo-left {
+    border-right: 2px #ffffff solid;
+}
+.header-bot_font{
+    font-size: 4.4rem;
+    letter-spacing: 0.4rem;
+    text-align: center;
+    color: white;
+    font-family: '方正清刻本'; 
+}
+.header-img_left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header-img_right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.nve {
+    height: 4.5rem;
+    padding-left: 0rem!important;
+    padding-right: 0rem!important;
+    line-height: 4.5rem;
+    border-bottom: 1px solid #e5e200;
+}
+.nve div{
+    font-size: 2.3rem;
+    text-align: center;
+}
+.nveStyle {
+    background: rgba(235, 235, 201, 0.7);
+    border-bottom: 0.4rem #e5e200 solid;
+}
+.look_for {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.look_for span {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+/* 主体样式 */
+.main-box{
+    min-height: 140rem;
+    background-image: url(../mafia-img/mafia-bg.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    margin-top: 5rem;
+}
+.main-box_{
+    min-height: 41rem;
+    background: rgba(243, 243, 233, 0.8);
+    margin-bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main-box_ div{
+    min-height: 30rem;
+    display: flex;
+    flex-direction: row;
+}
+.main-box_ div div{
+    display: flex!important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.main-box_ div div div{
+    display: flex!important;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.main-box_ div div:nth-child(1) {
+    width: 25%;
+}
+.main-box_ div div:nth-child(2) {
+    width: 40%;
+}
+.main-box_ div div:nth-child(3) {
+    width: 25%;
+}
+.bg {
+    background-image: url(../mafia-img/start.png);
+    background-size: 80% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.more {
+    font-size: 1.3rem;
+    text-align: end;
+    align-items: flex-end!important;
+}
+.bg div{
+    min-height: 6rem;
+    font-size: 3.2rem;
+    letter-spacing: 2rem;
+    text-align: center;
+    font-family: '方正清刻本';
+}
+.bg div:nth-child(1) {
+    width: 40%!important;
+}
+.main-box_con div:nth-child(1) {
+    min-height:5rem;
+    width: 100%!important;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.main-box_con div:nth-child(1) p {
+    width: 10rem;
+    min-height: 3rem;
+    background: #d30000;
+    border-radius: 1rem;
+    color: white;
+    font-size: 1.7rem;
+    text-align: center;
+    line-height: 3rem;
+    margin: 0rem;
+}
+.main-box_con div:nth-child(2) {
+    min-height: 25rem;
+    width: 100%!important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.main-box_con{
+    display: flex!important;
+    flex-direction: column!important;
+}
+.main-box_con div:nth-child(3) {
+    min-height: 2rem;
+    width: 100%!important;
+}
+/* 这个id拦截继承问题  */
+#content {
+    width: 100%;
+}
+#main-box_con_lef{
+    width: 50%!important;
+}
+#main-box_con_rig{
+    width: 50%!important;
+}
+.delPadding{
+    padding-right: 0rem!important;
+    padding-left: 0rem!important;
+    display: flex!important;
+    flex-direction: row!important;
+    justify-content: flex-start!important;
+    align-items: flex-start!important;
+}
+#main-box_con_lef li{
+    list-style-type: square;
+    min-height: 3rem;
+    line-height: 3rem;
+    font-size: 1.3rem;
+}
+#main-box_con_rig li{
+    list-style-type: square;
+    min-height: 3rem;
+    line-height: 3rem;
+    font-size: 1.3rem;
+}
+.btn{
+    background: #f0a7a6;
+    color: white
+}
+
+/* 底部样式  */
+.footer {
+    min-height: 25.5rem;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(../mafia-img/bottom.jpg);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+._footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 17.4rem;
+    background: rgba(224, 73, 73, 0.6);
+    width: 100%;
+}
+.weChat{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #f7fbfa;
+}
+.iconStyle {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.weChat div:nth-child(1) {
+    margin-right: 1rem
+}
+.weChat div:nth-child(2) p{
+    margin-bottom: 0rem!important;
+    letter-spacing: 0.3rem;
+    white-space: nowrap;  
+    text-overflow:ellipsis; 
+}
+._footer_code {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;  
+    text-overflow:ellipsis; 
+    letter-spacing: 0.3rem;
+    font-size: 1.2rem;
+    color: #eef4f6;
+}
+._footer_code div {
+    border-left: 0.3rem #f9fcfb solid;
+}
+._footer_code div div{
+    text-indent: 2rem
+}
+
+/* 搜索屏 */
+.input-box {
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.4); 
+    position: fixed;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top: 0rem
+}
+.input_ {
+    height: 20%;
+    width: 30%;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.input_style {
+    width: 90%;
+    margin-right: 0rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}

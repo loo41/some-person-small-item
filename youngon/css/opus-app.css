@@ -1,0 +1,44 @@
+/* 全局 */
+@media only screen and (min-width: 319px) and (max-width: 992px) {
+    .display-app{
+        display: none!important;
+    }
+    .display-block-app {
+        display: block!important;
+    }
+    .nve div{
+        font-size: 1.6rem!important;
+    }
+    .img-full {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+    .opus_box{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 319px) and (max-width: 992px) {
+    .opus_box{
+        width: 100%;
+    }
+    .carousel {
+        min-height: 0rem!important;
+    }
+    .list_box {
+        min-height: auto;
+        overflow: hidden;
+    }
+    .opus-list-box_or {
+        height: 100%;
+    }
+    .opus-lists div img{
+        padding: 0rem;
+    }
+    .footer {
+        background-size: auto auto;
+    }
+}
